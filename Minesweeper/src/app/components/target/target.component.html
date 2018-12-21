@@ -1,3 +1,4 @@
 <div>
-  <button (click) = "selected()">{{ (isTarget) ? 1 : 0 }}</button>
+  <button *ngIf="neighborTargets != 0">{{ neighborTargets }}</button>
+  <button *ngIf="!neighborTargets" (click) = "selected()"></button>
 </div>
