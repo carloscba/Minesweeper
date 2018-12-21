@@ -1,5 +1,5 @@
 <table>
   <tr *ngFor="let row of celd; index as r">
-    <td *ngFor="let col of celd; index as c"><app-target></app-target></td>
+    <td *ngFor="let col of celd; index as c"><app-target [targets] = "targets" [position] = "[r,c]"></app-target></td>
   </tr>
 </table>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { getRandomNumber } from './utils'
 
 
@@ -7,6 +7,7 @@ import { getRandomNumber } from './utils'
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.scss']
 })
+
 export class GameComponent implements OnInit {
 
   private size = 16;
