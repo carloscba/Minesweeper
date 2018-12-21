@@ -9,12 +9,23 @@ import { getRandomNumber } from './utils'
 })
 export class GameComponent implements OnInit {
 
-  public size = new Array(16);
+  private size = 16;
+  private sizeTargets = this.size * 2;
+  public celd = new Array(this.size);
+  public targets = new Array(this.sizeTargets);
 
-  constructor() { }
+  constructor() { 
+    this.setTargets();
+  }
 
   ngOnInit() {
-    console.log(getRandomNumber(0, this.size.length))
+    
+  }
+
+  setTargets(){
+    for(let i=0; i < this.targets.length;i++){
+      this.targets[i] = [getRandomNumber(0, this.size), getRandomNumber(0, this.size)]
+    }
   }
 
 }
