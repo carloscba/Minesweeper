@@ -2,9 +2,10 @@
   "name": "minesweeper",
   "version": "0.0.0",
   "scripts": {
+    "postinstall": "ng build --aot --prod",
     "ng": "ng",
-    "start": "serve dist/ --single",
-    "build": "ng build --prod",
+    "start": "ng serve",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -22,6 +23,7 @@
     "@angular/router": "~7.0.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
+    "serve": "^10.1.1",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
