@@ -32,8 +32,7 @@ export class TargetComponent implements OnInit {
   }
 
   selected():void{
-    (this.isTarget) && alert('LOSE')
-    this.getNeighbors()
+    (this.isTarget) ? alert('You lose!!!') : this.getNeighbors();
   }
   
   getNeighbors():void{
@@ -58,7 +57,7 @@ export class TargetComponent implements OnInit {
     neighbors.forEach((neighbor)=>{
       count = (this.checkIsTarget(neighbor)) ? count + 1 : count 
     })
-    this.neighborTargets = count;
+    this.neighborTargets = (count > 0) ? count : -1;
   }
 
 }

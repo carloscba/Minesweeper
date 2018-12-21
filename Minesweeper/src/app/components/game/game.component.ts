@@ -10,8 +10,8 @@ import { getRandomNumber } from './utils'
 
 export class GameComponent implements OnInit {
 
-  private size = 16;
-  private sizeTargets = this.size * 3;
+  private size = 16; //tamalo de la grilla 16x16 por ej.
+  private sizeTargets = this.size * 3; //Numero de bombas
   public celd = new Array(this.size);
   public targets = new Array(this.sizeTargets);
 
