@@ -30,4 +30,12 @@ export class TargetComponent implements OnInit {
     return targetFlag;
   }
 
+  selected():void{
+    (this.isTarget) && alert('LOSE')
+  }
+  
+  countNeighbors(){
+
+  }
+
 }

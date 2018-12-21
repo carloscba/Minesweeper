@@ -11,7 +11,7 @@ import { getRandomNumber } from './utils'
 export class GameComponent implements OnInit {
 
   private size = 16;
-  private sizeTargets = this.size * 2;
+  private sizeTargets = this.size * 3;
   public celd = new Array(this.size);
   public targets = new Array(this.sizeTargets);
 
